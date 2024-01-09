@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <div id="container-principal">
+
+ <!-- PAGINA INICIAL. -->
+       <section class="jogo" id="pagina-inicial">
+            <h1>Jogo da adivinhação</h1>
+            <h3>A regra do jogo é adivinhar o número sortido entre 0 e 100</h3>
+
+            <button onclick="iniciarJogo()">Jogar</button>
+            <button onclick="abrirClassificacao()">Classificação</button>
+            <button>Regras</button>
+
+            <h5>César Caus</h5>
+       </section>
+
+ <!-- PAGINA JOGO. -->
+       <section class="jogo" id="pagina-jogo">
+            <h1>Hora de adivinhar...</h1>
+            <h3>Digite números de 1 a 100 e siga as orintações no quadro de respostas</h3>
+
+            <div id="numero-digitado">
+                <input placeholder="Digite um número..." type="number" id="numero"  onkeypress="pressionarEnter(event)">
+                <button onclick="registrarNumero()">OK</button>
+            </div>
+            <div id="quadro-tentativas">
+                <p id="tentativa"></p>
+                <button onclick="abrirHistorico()" id="acessar-historico"><img src="imagens/historico.png"</button>
+            </div>   
+       </section>
+
+<!-- PAGINA HISTORICO. -->
+        <section class="jogo" id="pagina-historico">
+        <div id="historico">
+            <button onclick="fecharHistorico()"><img src="imagens/seta-voltar.png" alt=""></button>
+        </div>  
+        </section>
+
+<!-- PAGINA CLASSIFICAÇÃO. -->
+        <section class="jogo" id="pagina-classificacao">
+            <div id="classificacao">
+                <h1>Classificação</h1>
+                <button onclick="fecharClassificacao()"><img src="imagens/seta-voltar.png" alt=""></button>
+                <table>
+                    <th><img src="imagens/trofeu.png"</th>
+                    <th>Nome</th>
+                    <th>Tentativas</th>
+                </table>
+            </div>
+        </section>
+
+<!-- PAGINA RESULTADOS. -->        
+        <section class="jogo" id="pagina-resultado">
+            <h1>Parabéns</h1>
+            <h3>Você descobriu o número secreto!</h3>
+            <label id="numero-tentativas"></label>
+            <h2>Digite seu nome para salvar na classificação</h2>
+            <div id="salvar-info">
+                <input onkeypress="pressionarEnter(event)"  placeholder="Digite seu nome..." type="text" id="nome-jogador">
+                <button onclick="salvarClassificacao()">OK</button>
+            </div>
+
+            <button onclick="voltarInicio()" id="botao-inicio"><img src="imagens/botao-inicio.png"></button>   
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

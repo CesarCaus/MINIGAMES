@@ -1,0 +1,240 @@
+body {
+     background: rgb(24, 0, 24)  url(imagens/fundo-minigame-1.png) no-repeat top scroll;
+     background-size: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+#container-principal {
+     width: 80%;
+     height:700px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.jogo {
+     width: 70%;
+     height: 500px;
+     background-color: rgba(255, 255, 255, 0.8);
+     border: 6px solid rgb(0, 0, 0);
+     background: url(imagens/fundo-minigame-2.png) left;
+     display: flex;
+     flex-direction: column;
+     color: white;
+     align-items: center;
+}
+
+.jogo h1 {
+     font-size: 50px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     text-shadow: 5px 5px 5px black;
+     padding: 10px;
+}
+
+.jogo h3 {
+     margin-top: -10px;
+     font-size: 25px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     border-bottom: 2px solid black;
+     box-shadow: 0px 2px 2px rgb(54, 0, 57);
+     padding: 10px;
+     text-align: center;
+}
+
+.jogo button {
+     width: 200px;
+     border: 2px solid black;
+     border-radius: 5px;
+     background-color: white;
+     font-size: 18px;
+     text-shadow: 2px 2px 2px rgb(197, 195, 195);
+     padding: 10px;
+     margin: 10px;
+}
+
+.jogo input {
+     width: 200px;
+     border: 2px solid black;
+     border-radius: 5px;
+     background-color: white;
+     font-size: 18px;
+     text-shadow: 2px 2px 2px rgb(197, 195, 195);
+     padding: 10px;
+     margin: 10px;
+}
+
+.jogo button:hover {
+     background-color: rgb(226, 206, 245);
+     box-shadow: 2px 2px 2px rgb(13, 13, 13);
+     cursor: pointer;
+}
+
+/*PAGINA INICIAL*/
+
+#pagina-inicial {
+     display: flex;
+}
+
+/*PAGINA JOGO*/
+
+#pagina-jogo {
+     display: none;
+}
+
+#pagina-jogo button {
+     width: 50px;
+}
+
+#quadro-tentativas {
+     width: 70%;
+     height: 150px;
+     border: 2px solid black;
+     border-radius: 5px;
+     background-color: white;
+     font-size: 18px;
+     text-shadow: 2px 2px 2px rgb(197, 195, 195);
+     padding: 10px;
+     margin-bottom: 20px;
+     color: black;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+}
+
+#quadro-tentativas button{
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+}
+
+#acessar-historico img{
+     width: 30px;
+     height: 30px;
+     margin-left: -5px;
+}
+
+/*PAGINA HISTÓRICO*/
+
+#historico {
+     position: relative;
+     border: 2px solid red;
+     width: 80%;
+     height: 360px;
+     margin-top: 50px;
+     background-color: white;
+     border: 2px solid black;
+     color: black;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 18px;
+     text-shadow: 2px 2px 2px rgb(197, 195, 195);
+     text-align: center;
+     padding-top: 40px;
+     overflow: auto;
+}
+
+#pagina-historico {
+     display: none;
+}
+
+#historico img {
+     width: 30px;
+     height: 30px;
+}
+
+#historico button {
+     width: 35px;
+     height: 35px;
+     padding: 0;
+     top: 0;
+     left: 0;
+     position: absolute;
+}
+
+/*PAGINA CLASSIFICAÇÃO*/
+
+#pagina-classificacao {
+     display: none;
+     justify-content: center;
+     align-items: center
+}
+
+#classificacao {
+     position: relative;
+     border: 2px solid red;
+     width: 70%;
+     height: 360px;
+     background-color: white;
+     border: 2px solid black;
+     color: black;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 18px;
+     text-shadow: 2px 2px 2px rgb(197, 195, 195);
+     text-align: center;
+     overflow: auto;
+     display: flex;
+     flex-direction: column;
+}
+
+#classificacao h1 {
+     text-shadow: 5px 5px 5px rgb(197, 197, 197);
+}
+
+#classificacao img {
+     width: 30px;
+     height: 30px;
+}
+
+#classificacao button {
+     width: 35px;
+     height: 35px;
+     padding: 0;
+     top: 0;
+     left: 0;
+     position: absolute;
+}
+
+#pagina-classificacao th {
+     text-align: center;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.21);
+     padding: 10px;
+     font-size: 18px;
+}
+
+#pagina-classificacao tr {
+     text-shadow: none;
+     font-size: 16px;
+}
+
+/*PAGINA RESULTADO*/
+
+#pagina-resultado {
+     display: none;
+}
+
+#salvar-info button {
+     width: 50px;
+}
+
+#pagina-resultado label {
+     font-size: 18px;
+}
+
+#botao-inicio {
+     width: 75px;
+     height: 75px;
+     padding: 0;
+     margin: 30px;
+     background-color: rgba(128, 0, 128, 0.1);
+     border: 3px solid black;
+}
+
+#botao-inicio img {
+     width: 50px;
+     height: 50px;
+}
